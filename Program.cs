@@ -1,22 +1,21 @@
 ﻿using System;
 
-namespace AccessSpecifierExample
+namespace ConditionalStatement
 {
-    class ParamsEx
+    class IfStatement
     {
-        public void Show(params int[] val)
-        {
-            for(int i=0;i<val.Length;i++)
-            {
-                Console.WriteLine(val[i]);
-            }
-        }
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello Wel Come To Params Program !!!");
-            ParamsEx pe = new ParamsEx();
-            pe.Show(2, 3, 4, 5);
-            
+            int number = 12;
+            if (number < 5)
+            {
+                Console.WriteLine("{0} is less than 5", number);
+            }
+            else
+            {
+                Console.WriteLine("{0} is not negative", number);
+            }
+            Console.WriteLine("This Statment is always executed!");
         }
     }
-}
+}   
