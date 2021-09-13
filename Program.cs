@@ -1,28 +1,22 @@
 ﻿using System;
 
-namespace EvenOdd
+namespace AccessSpecifierExample
 {
-    class Program
+    class ParamsEx
     {
+        public void Show(params int[] val)
+        {
+            for(int i=0;i<val.Length;i++)
+            {
+                Console.WriteLine(val[i]);
+            }
+        }
         static void Main(string[] args)
         {
+            Console.WriteLine("Hello Wel Come To Params Program !!!");
+            ParamsEx pe = new ParamsEx();
+            pe.Show(2, 3, 4, 5);
             
-            int num,i;
-
-            for(num=2;num<=10;num++)
-                for(i=1;i<=10;i++)
-                {
-                    Console.WriteLine(num + " * " +i + " = " +(num * i));
-                }
-            
-            if (num % 2 ==0)
-            {
-                Console.WriteLine(num + " Even");
-            }
-            else
-            {
-                Console.WriteLine(num + " Odd");
-            }
         }
     }
 }
