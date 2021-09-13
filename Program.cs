@@ -1,21 +1,28 @@
 ﻿using System;
 
-namespace ConditionalStatement
+namespace EvenOdd
 {
-    class IfStatement
+    class Program
     {
         static void Main(string[] args)
         {
-            int number = 12;
-            if (number < 7)
+            
+            int num,i;
+
+            for(num=2;num<=10;num++)
+                for(i=1;i<=10;i++)
+                {
+                    Console.WriteLine(num + " * " +i + " = " +(num * i));
+                }
+            
+            if (num % 2 ==0)
             {
-                Console.WriteLine("{0} is less than 7", number);
+                Console.WriteLine(num + " Even");
             }
             else
             {
-                Console.WriteLine("{0} is not negative", number);
+                Console.WriteLine(num + " Odd");
             }
-            Console.WriteLine("This Statment is always executed!");
         }
     }
-}   
+}
