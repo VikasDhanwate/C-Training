@@ -7,9 +7,9 @@ namespace ConditionalStatement
         static void Main(string[] args)
         {
             int number = 12;
-            if (number < 5)
+            if (number < 7)
             {
-                Console.WriteLine("{0} is less than 5", number);
+                Console.WriteLine("{0} is less than 7", number);
             }
             else
             {
